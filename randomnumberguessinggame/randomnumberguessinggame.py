@@ -8,11 +8,11 @@ def guess(x): #defining a function
     while guess != random_number: #while loop used to enter the number to get the right guess
         guess = int(input(f"Guess a number between 1 and {x}: "))
         if guess < random_number:
-            print("Sorry, guess again. Too low!")
+            print("Sorry, guess again buddy, too low!")
         elif guess > random_number:
-            print("Sorry, guess again. Too high!")
+            print("Sorry, guess again buddy, too high!")
 
-    print(f"Yay,congrats. You have guessed the number {random_number} correctly!") #displaying the congratulatory message and the guessed random number
+    print(f"Yaaaaaay,congrats. You have guessed the number {random_number} correctly!") #displaying the congratulatory message and the guessed random number
 
 
-guess(20) #calling and running the function
+guess(20) #calling and running the function 20 times

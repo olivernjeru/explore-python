@@ -20,4 +20,4 @@ def computer_guess(x): #defining the guess function
     print(f"Yay, the computer guessed your number {guess} correctly!") #displaying the message that the computer guessed the random number
 
 
-computer_guess(10) #calling and running the function
+computer_guess(20) #calling and running the function
