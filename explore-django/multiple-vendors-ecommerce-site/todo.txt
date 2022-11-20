@@ -1,0 +1,21 @@
+Todo
+    -DONE Create virtual env
+    -DONE Install and setup
+    -DONE Init Database Superuser Test Run
+    -DONE Create core app for base pages
+    -DONE Create app for user profiles to make it easier to separate vendors from regular customers
+    -DONE Create app for products to add them in the backend using the UI
+        -DONE Add category model
+    -DONE List out newest products on the Frontpage
+    -DONE Product details view
+    -Category View to see the categories on the UI
+    -Simple Search
+    -Vendor detail page to show all the products for a certain vendor
+    -Make it possible to sign up, log in and log out
+    -Create my account page
+    -Add products to cart, view cart
+    -Checkout and get order summary maybe
+    -Implement payment gateway with Stripe, PayPal or both
+    -Admin pages for the vendors
+    -Deploy, not sure about this but we'll try
+
