@@ -7,7 +7,7 @@ def get_valid_word(words):
     while '-' in word or ' ' in word: #while there is a dash or space is in this word, keep choosing random words
         word = random.choice(words)
 
-    return word #a word is return when there is no dash or space in this word
+    return word #a word is returned when there is no dash or space in this word
 
 def hangman():
     word = get_valid_word(words)
