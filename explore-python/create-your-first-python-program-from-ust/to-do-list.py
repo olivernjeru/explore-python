@@ -9,3 +9,5 @@ def show_menu():
     print('3. Remove a Task')
     print('4. Exit')
 
+while user_input != '4':
+    show_menu()
