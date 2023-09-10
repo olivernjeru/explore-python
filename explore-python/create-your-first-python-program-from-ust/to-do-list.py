@@ -1,8 +1,12 @@
 user_input = ''
 tasks = []
 
-def show_menu():
+first_run = True
+while first_run:
     print('Welcome to My To-Do List!')
+    first_run = False
+
+def show_menu():
     print('Enter only the digits below to access My To-Do List functionalities')
     print('1. Add Tasks')
     print('2. View Available Tasks')
@@ -18,7 +22,7 @@ while user_input != '4':
         print(item, 'was added to your to-do list!')
     elif user_input == '2':
         if tasks != []:
-            print('These is your list of tasks: ')
+            print('This is your list of tasks: ')
             for item in tasks:
                 print(item)
         else:
@@ -31,6 +35,18 @@ while user_input != '4':
         else:
             print(item, 'could not be found in your to-do list')
     elif user_input =='4':
-        print('Goodbye!')
+        if tasks != []:
+            print('You still have the following tasks to complete: ')
+            for item in tasks:
+                print(item)
+            quit_confirmation = input('Are you sure you want to quit? Please enter Y or N: ')
+            if quit_confirmation == 'Y':
+                print('Goodbye!')
+            elif quit_confirmation == 'N':
+                print('Please complete the following tasks: ')
+                for item in tasks:
+                    print(item)
+        else:
+            print('Goodbye!')
     else:
         print('Please enter either 1, 2, 3 or 4.')
